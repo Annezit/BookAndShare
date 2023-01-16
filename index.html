@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Book and share</h1>
+
+
+        <div class="container-icon">
+
+            <div class="container-cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-cart">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
+
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito"></span>
+                            <p class="titulo-producto-carrito"></p>
+                            <span class="precio-producto-carrito"></span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="icon-close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cart-total hidden">
+                    <h3>Total:</h3>
+                    <span class="total-pagar"></span>
+                </div>
+                <button> <a href="./php/bienvenida.php">
+                        <p class="cart-empty">Comprar</p>
+                    </a></button>
+            </div>
+
+        </div>
+        <div class="icon">
+            <figure>
+                <a href="php/cerrar.php?cerrar=yes">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon-close">
+                        <path fill-rule="evenodd"
+                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z"
+                            clip-rule="evenodd" />
+                    </svg>
+               </a>
+            </figure>
+        </div>
+    </header>
+
+    <body background-image: background="img/fondofloral.jpg">
+
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+
+
+        <div class="container-items">
+
+            <div class="item">
+                <figure>
+                    <img style="height: 300px; width: 300px;" src="img/DesingAnthology.jpg" alt="Desing anthology">
+                </figure>
+                <div class="info-product">
+                    <h2> Desing anthology </h2>
+                    <p class="price"> 12.59 </p>
+                    <button class="comentar"><a href="comment/comment-desing-anthology.html"> Comentar</a> </button>
+                    <button class="comprar"> Añadir al carrito </button>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <figure>
+                    <img style="height: 300px; width: 300px;" src="img/DorianGray.jpg" alt="The picture of Dorian Gray">
+                </figure>
+                <div class="info-product">
+                    <h2> The picture of Dorian Gray </h2>
+                    <p class="price"> 17.99 </p>
+                    <button class="comentar"> <a href="comment/comment-dorian-gray.html"> Comentar </a> </button>
+                    <button class="comprar"> Añadir al carrito </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img style="height: 300px; width: 300px;" src="img/EssaysChangeYou.jpg"
+                        alt="101 Essays that will change the way you think">
+                </figure>
+                <div class="info-product">
+                    <h2> 101 Essays that will change the way you think </h2>
+                    <p class="price"> 23.99 </p>
+                    <button class="comentar"> <a href="comment/comment-101-essays.html"> Comentar </a> </button>
+                    <button class="comprar"> Añadir al carrito </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img style="height: 300px; width: 300px;" src="img/GoalPlanner.jpg" alt="Goal planner">
+                </figure>
+                <div class="info-product">
+                    <h2> Goal planner </h2>
+                    <p class="price"> 7.49 </p>
+                    <button class="comentar"> <a href="comment/comment-goal-planner.html"> Comentar </a> </button>
+                    <button class="comprar"> Añadir al carrito </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img style="height: 300px; width: 300px;" src="img/Happy.jpg" alt="Happy">
+                </figure>
+                <div class="info-product">
+                    <h2> Happy </h2>
+                    <p class="price"> 14.99 </p>
+                    <button class="comentar"> <a href="comment/comment-happy.html"> Comentar </a> </button>
+                    <button class="comprar"> Añadir al carrito </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img style="height: 300px; width: 300px;" src="img/JimMorrison.jpg" alt="Jim Morrison">
+                </figure>
+                <div class="info-product">
+                    <h2> Jim Morrison </h2>
+                    <p class="price"> 24.49 </p>
+                    <button class="comentar"> <a href="comment/comment-jim-morrison.html"> Comentar </a> </button>
+                    <button class="comprar"> Añadir al carrito </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img style="height: 300px; width: 300px;" src="img/MereChristianity.jpg" alt="Mere Christianity">
+                </figure>
+                <div class="info-product">
+                    <h2> Mere Christianity </h2>
+                    <p class="price"> 18.99 </p>
+                    <button class="comentar"> <a href="comment/comment-mere-christianity.html"> Comentar </a> </button>
+                    <button class="comprar"> Añadir al carrito </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img style="height: 300px; width: 300px;" src="img/Narnia.jpg" alt="Narnia">
+                </figure>
+                <div class="info-product">
+                    <h2> Narnia </h2>
+                    <p class="price"> 20.49 </p>
+                    <button class="comentar"> <a href="comment/comment-narnia.html"> Comentar </a> </button>
+                    <button class="comprar"> Añadir al carrito </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img style="height: 300px; width: 300px;" src="img/StorytellingWorkbook.jpg"
+                        alt="A storytelling workbook for begginers">
+                </figure>
+                <div class="info-product">
+                    <h2> A storytelling workbook for begginers </h2>
+                    <p class="price"> 7.99 </p>
+                    <button class="comentar"> <a href="comment/comment-a-storytellling.html"> Comentar </a> </button>
+                    <button class="comprar"> Añadir al carrito </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img style="height: 300px; width: 300px;" src="img/TheKinfolkTable.jpg" alt="The kinfolk table">
+                </figure>
+                <div class="info-product">
+                    <h2> The kinfolk table </h2>
+                    <p class="price"> 29.39 </p>
+                    <button class="comentar"> <a href="comment/comment-the-kinfolk.hmtl"> Comentar </a> </button>
+                    <button class="comprar"> Añadir al carrito </button>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <figure>
+                    <img style="height: 300px; width: 300px;" src="img/TwoTowers.jpg" alt="The two towers">
+                </figure>
+                <div class="info-product">
+                    <h2> The two towers </h2>
+                    <p class="price"> 25.65 </p>
+                    <button class="comentar"> <a href="comment/comment-the-two.html"> Comentar </a> </button>
+                    <button class="comprar"> Añadir al carrito </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img style="height: 300px; width: 300px;" src="img/WomenDGAF.jpg"
+                        alt="This is for the women who don't give a fuck">
+                </figure>
+                <div class="info-product">
+                    <h2> This is for the women who don't give a fuck </h2>
+                    <p class="price"> 18.79 </p>
+                    <button class="comentar"> <a href="comment-this-is.html"> Comentar </a> </button>
+                    <button class="comprar"> Añadir al carrito </button>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
+
+</html>
